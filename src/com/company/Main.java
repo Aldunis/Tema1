@@ -87,7 +87,7 @@ class Mylist extends Book implements Comparator<Book>  {
     }
     public static void main(String[] args) {
         ArrayList<Book> lista = new ArrayList<Book>(Arrays.asList(
-                new Book("Harap-Alb","150"),
+                new Book("Harap-Alb","18"),
                 new Book("Alba ca zapada","200"),
                 new Book("Luceafarul","300")
         ));
