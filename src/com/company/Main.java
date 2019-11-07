@@ -89,7 +89,9 @@ class Mylist extends Book implements Comparator<Book>  {
         ArrayList<Book> lista = new ArrayList<Book>(Arrays.asList(
                 new Book("Harap-Alb","18"),
                 new Book("Alba ca zapada","200"),
-                new Book("Luceafarul","300")
+                new Book("Luceafarul","300"),
+                new Book("sefsf","300")
+
         ));
         Collections.sort(lista , new Mylist());
         System.out.println("Sorted");
