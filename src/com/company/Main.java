@@ -79,7 +79,6 @@ class Mylist extends Book implements Comparator<Book>  {
             new Mylist(new ArrayList());
 
         }
-//new message
     @Override
     public int compare(Book book, Book t1) {
             int comparatie = book.getName().compareTo(t1.getName());
