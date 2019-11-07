@@ -1,4 +1,6 @@
 package com.company;
+import javafx.collections.transformation.SortedList;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -40,7 +42,8 @@ public class Main {
     }
 }
 class Mylist extends Book implements Comparator<Book>  {
-        private List<Book> Mylist;
+        private SortedList Mylist = new SortedList<>();
+        Iterator<String> itr = Mylist.iterator();
         public String price;
 
     public Mylist() {
@@ -72,7 +75,7 @@ class Mylist extends Book implements Comparator<Book>  {
 
     public Mylist(List obj) {
         super();
-        Mylist = obj;
+        Mylist = (SortedList) obj;
             new Mylist(new ArrayList());
 
         }

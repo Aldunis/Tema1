@@ -7,7 +7,7 @@ public class Book {
     private String author;
     private String type;
 
-    public Book(String s, String s1) {
+    public Book(String name, String price) {
     }
 
     public Book() {
