@@ -5,9 +5,8 @@ class Atlas extends Book {
     private String name;
     private String type;
     private String author;
-    private String price;
-
-    Atlas(String name, String price, String author, String type) { // defines the parameters to object Atlas
+    private Double price;
+    Atlas(String name, Double price, String author, String type) {// defines the parameters to object Atlas
     }
 
     public String getAuthor() {
@@ -25,13 +24,16 @@ class Atlas extends Book {
         this.name = name;
     }
 
-    public String getPrice() {
+    @Override
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    @Override
+    public void setPrice(Double price) {
         this.price = price;
     }
+
     public String getType() {
         return type;
     }
@@ -51,6 +53,7 @@ class Atlas extends Book {
                 " " + super.toString();
 
     }
+
 
 }
 
