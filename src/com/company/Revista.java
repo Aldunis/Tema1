@@ -4,9 +4,9 @@ class Revista extends Book {
     private String name;
     private String type;
     private String author;
-    private String price;
+    private Double price;
 
-    Revista(String name, String price, String author, String type) {
+    Revista(String name, Double price, String author, String type) {
         ;
     }
 
@@ -25,13 +25,14 @@ class Revista extends Book {
         super.setNume(nume);
     }
 
-
-    public void setPrice(String price) {
-        this.price = price;
+    @Override
+    public Double getPrice() {
+        return price;
     }
 
-    public String getPrice() {
-        return price;
+    @Override
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public String getName() {
