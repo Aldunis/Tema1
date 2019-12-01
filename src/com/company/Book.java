@@ -1,19 +1,17 @@
 package com.company;
-//nothing
-public class Book {
+public class Book implements Comparable {
     private String name;
     private String year;
-    private String price;
+    private Double price;
     private String author;
     private String type;
-
-    public Book(String name, String price) {
+    public Double getPrice() {
+        return price;
     }
 
-    public Book() {
-
+    public void setPrice(Double price) {
+        this.price = price;
     }
-
     public String getName() {
         return name;
     }
@@ -28,14 +26,6 @@ public class Book {
 
     public void setYear(String year) {
         this.year = year;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
     }
 
     public String getType() {
@@ -63,15 +53,17 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Book) {
-            Book book = (Book) obj;
-            book.getNume() .equals(this.getNume()) ;
-            return false;
-        } else {
-            return false;
+    public int compareTo(Object obj) {
+        Book b = (Book) obj;
+        if(this.getPrice()- ((Book) obj).getPrice() <0) {
+            return -1;
         }
+            else if (this.getPrice() - ((Book) obj).getPrice() == 0)
+                    return 0;
+                else return 1;
+
     }
+
 }
 
 
