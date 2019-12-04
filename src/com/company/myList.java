@@ -7,6 +7,10 @@ I sorted the List using Collections and then it prints the amount of the books s
 Created by : @Catalin
  */
 
+import com.company.Model.Book;
+
+import java.util.*;
+
 public class myList extends Book {
     public static void main(String[] args)  {
         Scanner keyboard = new Scanner(System.in);
