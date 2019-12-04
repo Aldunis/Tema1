@@ -1,5 +1,4 @@
-package com.company;
-import java.util.*;
+package com.company.util;
 /*
 Here I created a custom List that is able to store 3 books(keyboard input for name and price)
 The List methods are: size,add and remove books.

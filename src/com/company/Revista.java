@@ -1,12 +1,12 @@
-package com.company;
+package com.company.Model;
 
-class Revista extends Book {
+public class Revista extends Book {
     private String name;
     private String type;
     private String author;
     private Double price;
 
-    Revista(String name, Double price, String author, String type) {
+    public Revista(String name, Double price, String author, String type) {
         ;
     }
 

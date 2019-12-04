@@ -1,12 +1,12 @@
-package com.company;
+package com.company.Model;
 
 
-class Atlas extends Book {
+public class Atlas extends Book {
     private String name;
     private String type;
     private String author;
     private Double price;
-    Atlas(String name, Double price, String author, String type) {// defines the parameters to object Atlas
+    public Atlas(String name, Double price, String author, String type) {// defines the parameters to object Atlas
     }
 
     public String getAuthor() {

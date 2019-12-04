@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Model;
 public class Book implements Comparable {
     private String name;
     private String year;
